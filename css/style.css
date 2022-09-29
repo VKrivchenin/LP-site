@@ -1,0 +1,234 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
+
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* width: 100%; */
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+}
+
+a {
+    text-decoration: none;
+    color: #808080;
+    transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+    transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto/9;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid silver;
+    margin: 1em 0;
+    padding: 0;
+}
+
+header {
+    float: left;
+    background-color: #f1c2ba;
+    width: 99.4%;
+    padding: 0.3%;
+    border-bottom: 5px solid #4c4b47;
+}
+
+header div#logo a img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+}
+
+header div#logo a H1 {
+    font-size: 2.5em;
+    padding-top: 38px;
+}
+
+header div#logo a p {
+    color: #000000;
+    margin-top: 8px;
+}
+
+/* Меню сайта  */
+
+/* Меню сайта  */
+
+nav {
+    background-color: white;
+    width: 100%;
+    float: left;
+    border-bottom: 2px solid #ebebeb;
+}
+
+nav a {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #000000;
+}
+
+
+
+#CompMenu {
+    display: flex;
+}
+
+#CompMenu>a {
+   width: calc(100%/8);
+   padding: 2px 0;
+   border: 1px solid #000000;
+   border-radius: 20px;
+   margin: 10px 5px;
+   
+
+}
+
+#ShowMenu {
+    display: inline;
+    font-size: 1.2em;
+    margin-left: 20PX;
+    float: left;
+    margin-top: 4px;
+}
+
+#MobMenu {
+    display: none;
+    width: 100%;
+    float: left;
+}
+
+.fixed  {
+    position: fixed;
+    top: 0;
+    opacity: 0.9;
+}
+
+nav:hover .fixed{
+    opacity: 1;
+}
+
+@media (min-width: 950px) {
+    #ShowMenu {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 949px) {
+    #CompMenu{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content {
+    flex: 1 0 auto; 
+}
+    /* футер сайта */
+footer {
+    float: left;
+    background-color: #f1c2ba;
+    width: 98%;
+    padding: 1%;
+    border-top: 5px solid #4c4b47;
+}
+
+#site_name {
+    margin-right: 5%;
+    float: right;
+}
+
+@media (max-width:950px) {
+    #clear {
+        clear: both;
+    }
+}
+
+#FooterMenu>a {
+    margin-left: 2%;
+
+}
+#FooterMenu>a:hover {
+    border-bottom: 1px solid black; 
+}
+
+#rights {
+    float: left;
+    margin-left: 5%;
+    font-size: 1.1em;
+    margin-top: 20 px;
+}
+
+#rights>a:hover {
+    border-bottom: 1px solid black; 
+}
+
+#social {
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+
+#social>a {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: white;
+    margin-left: 2%;
+    width: 30px;
+    height: 30px;
+    float: right;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+#social>a:hover {
+    background-color: black;
+    color:white;
+}
+
+@media (maxwidth: 520px) {
+    #Site_Nmae {
+        display: none;
+    }
+    #social {
+        width: 100%;
+    }
+}
